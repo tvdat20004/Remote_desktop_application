@@ -1,6 +1,6 @@
 ﻿namespace Server_database
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.launchingButton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
+            // 
+            // launchingButton
+            // 
+            this.launchingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.launchingButton.Location = new System.Drawing.Point(47, 224);
+            this.launchingButton.Name = "launchingButton";
+            this.launchingButton.Size = new System.Drawing.Size(193, 55);
+            this.launchingButton.TabIndex = 1;
+            this.launchingButton.Text = "Launch server";
+            this.launchingButton.UseVisualStyleBackColor = true;
+            this.launchingButton.Click += new System.EventHandler(this.launchingButton_Click);
             // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(74, 88);
+            this.richTextBox1.Location = new System.Drawing.Point(301, 69);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(867, 452);
-            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Size = new System.Drawing.Size(683, 380);
+            this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // Form1
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 639);
+            this.ClientSize = new System.Drawing.Size(1025, 501);
             this.Controls.Add(this.richTextBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Server database";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.closeServer);
+            this.Controls.Add(this.launchingButton);
+            this.Name = "Home";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.loadForm);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button launchingButton;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
-

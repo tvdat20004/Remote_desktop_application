@@ -11,7 +11,7 @@ using System.Net.NetworkInformation;
 
 namespace lab3_4
 {
-    
+
     public partial class server : Form
     {
         public server()
@@ -82,9 +82,7 @@ namespace lab3_4
             }
             if (msg != "" )
             {
-                //MessageBox.Show(msg);
                 string[] m = msg.Split(':');
-                //MessageBox.Show(m[0]);
                 Int64 id = Int64.Parse(m[0]);
                 try
                 {

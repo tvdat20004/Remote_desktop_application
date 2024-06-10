@@ -23,10 +23,12 @@ namespace Server_database
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        int port;
+        public Form1(int _port)
         {
             InitializeComponent();
             connectDB();
+            port = _port;
         }
         MongoClient mongoClient;
         class User
@@ -92,10 +94,10 @@ namespace Server_database
             try
             {
                 string myIP = GetIP();
-                IPEndPoint ipepServer1 = new IPEndPoint(IPAddress.Parse(myIP), 8888);
+                IPEndPoint ipepServer1 = new IPEndPoint(IPAddress.Parse(myIP), port);
                 listenerSocket.Bind(ipepServer1);
                 listenerSocket.Listen(-1);
-                richTextBox1.Text += $"Server is listening on {myIP}:8888.\n";
+                richTextBox1.Text += $"Server is listening on {myIP}:{port}.\n";
             }
             catch
             {
@@ -106,12 +108,12 @@ namespace Server_database
             while (true)
             {
                 Socket clientSocket = await listenerSocket.AcceptAsync();
-                richTextBox1.Text += $"Client {clientSocket.RemoteEndPoint} connected\n";
+                richTextBox1.Text += $"Load balancing server connected\n";
                 Thread listenMsg = new Thread(() => handleRequest(clientSocket));
                 listenMsg.Start();
             }
         }
-        private void sendMessage2Client(Socket client, string msg)
+        private void sendRespone(Socket client, string msg)
         {
             client.Send(Encoding.UTF8.GetBytes(msg));
         }
@@ -150,13 +152,13 @@ namespace Server_database
                         Username = user.Username
                     };
                     data.InsertOne(newUsers);
-                    Thread sendSuccessMess = new Thread(() => sendMessage2Client(clientSocket, "Register successfully!!!"));
+                    Thread sendSuccessMess = new Thread(() => sendRespone(clientSocket, "Register successfully!!!"));
                     sendSuccessMess.Start();
                     richTextBox1.Text += $"{clientSocket.RemoteEndPoint} register successfully!!!\n";
                 }
                 catch
                 {
-                    Thread sendFailMess = new Thread(() => sendMessage2Client(clientSocket, "Register fail :("));
+                    Thread sendFailMess = new Thread(() => sendRespone(clientSocket, "Register fail :("));
                     sendFailMess.Start();
                     richTextBox1.Text += $"{clientSocket.RemoteEndPoint} register fail :(\n";
                 }
@@ -171,7 +173,7 @@ namespace Server_database
                 if (_user == null)
                 {
                     richTextBox1.Text += $"Client {clientSocket.RemoteEndPoint} login fail!!!\n";
-                    Thread sendFailMess = new Thread(() => sendMessage2Client(clientSocket, "Login fail :("));
+                    Thread sendFailMess = new Thread(() => sendRespone(clientSocket, "Login fail :("));
                     sendFailMess.Start();
                 }
                 else
@@ -179,13 +181,13 @@ namespace Server_database
                     if (_user.Password != user.Password)
                     {
                         richTextBox1.Text += $"Client {clientSocket.RemoteEndPoint} login fail!!!\n";
-                        Thread sendFailMess = new Thread(() => sendMessage2Client(clientSocket, "Login fail :("));
+                        Thread sendFailMess = new Thread(() => sendRespone(clientSocket, "Login fail :("));
                         sendFailMess.Start();
                     }
                     else
                     {
                         richTextBox1.Text += $"Client {clientSocket.RemoteEndPoint} login successfully!!!\n";
-                        Thread sendSuccessMess = new Thread(() => sendMessage2Client(clientSocket, "Login successfully"));
+                        Thread sendSuccessMess = new Thread(() => sendRespone(clientSocket, "Login successfully"));
                         sendSuccessMess.Start();
                     }   
                 }
@@ -194,9 +196,7 @@ namespace Server_database
 
         private void listeningButton_Click(object sender, EventArgs e)
         {
-            CheckForIllegalCrossThreadCalls = false;
-            Thread serverThread = new Thread(new ThreadStart(StartUnsafeThread));
-            serverThread.Start();
+            
         }
 
         private void closeServer(object sender, FormClosingEventArgs e)
@@ -207,6 +207,18 @@ namespace Server_database
             string fullFilePath = Path.Combine(saveFolderPath, fileName);
             Directory.CreateDirectory(saveFolderPath);
             File.WriteAllText(fullFilePath, richTextBox1.Text);
+        }
+
+        private void loadForm(object sender, EventArgs e)
+        {
+            CheckForIllegalCrossThreadCalls = false;
+            Thread serverThread = new Thread(new ThreadStart(StartUnsafeThread));
+            serverThread.Start();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
