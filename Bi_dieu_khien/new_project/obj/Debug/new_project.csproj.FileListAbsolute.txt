@@ -1,0 +1,10 @@
+E:\tvdat20004\net_programing\new_project\new_project\bin\Debug\new_project.exe.config
+E:\tvdat20004\net_programing\new_project\new_project\bin\Debug\new_project.exe
+E:\tvdat20004\net_programing\new_project\new_project\bin\Debug\new_project.pdb
+E:\tvdat20004\net_programing\new_project\new_project\obj\Debug\new_project.csproj.AssemblyReference.cache
+E:\tvdat20004\net_programing\new_project\new_project\obj\Debug\new_project.Form1.resources
+E:\tvdat20004\net_programing\new_project\new_project\obj\Debug\new_project.Properties.Resources.resources
+E:\tvdat20004\net_programing\new_project\new_project\obj\Debug\new_project.csproj.GenerateResource.cache
+E:\tvdat20004\net_programing\new_project\new_project\obj\Debug\new_project.csproj.CoreCompileInputs.cache
+E:\tvdat20004\net_programing\new_project\new_project\obj\Debug\new_project.exe
+E:\tvdat20004\net_programing\new_project\new_project\obj\Debug\new_project.pdb

@@ -1,0 +1,67 @@
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\bin\Debug\new_project.exe.config
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\bin\Debug\new_project.exe
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\bin\Debug\new_project.pdb
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.AssemblyReference.cache
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\new_project.Form1.resources
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\new_project.Properties.Resources.resources
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.GenerateResource.cache
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.CoreCompileInputs.cache
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\new_project.exe
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\new_project.pdb
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_.85636194.Up2Date
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe.config
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.pdb
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.AssemblyReference.cache
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Form1.resources
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Properties.Resources.resources
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.GenerateResource.cache
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.CoreCompileInputs.cache
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_.85636194.Up2Date
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.exe
+E:\tvdat20004\net_programing\Do_an\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.pdb
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe.config
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.pdb
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Form1.resources
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Properties.Resources.resources
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_.85636194.Up2Date
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.exe
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.pdb
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Formdkidnhap.resources
+C:\Users\Admin\Downloads\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.ChatForm.resources
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.AssemblyReference.cache
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.exe
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.pdb
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe.config
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.pdb
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\Newtonsoft.Json.dll
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\Newtonsoft.Json.xml
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.ChatForm.resources
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Form1.resources
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Formdkidnhap.resources
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Properties.Resources.resources
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.GenerateResource.cache
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.CoreCompileInputs.cache
+E:\tvdat20004\net_programing\Do_an\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_.85636194.Up2Date
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe.config
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.exe
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\new_project.pdb
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\Newtonsoft.Json.dll
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\bin\Debug\Newtonsoft.Json.xml
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.AssemblyReference.cache
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.ChatForm.resources
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Form1.resources
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Formdkidnhap.resources
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.Properties.Resources.resources
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.GenerateResource.cache
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.CoreCompileInputs.cache
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_.85636194.Up2Date
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.exe
+D:\Save\Code\LapTrinhMang\DOAN\ffffff (1)\ffffff\Bi_dieu_khien\Bi_dieu_khien\Bi_dieu_khien\new_project\obj\Debug\new_project.pdb
