@@ -25,6 +25,7 @@ namespace UltraView
             InitializeComponent();
             btnStatusTab2.BackColor = Color.Yellow;
         }
+      
         void Test(string partnerIP, int randomPort)
         {
             string newPort = randomPort.ToString();
@@ -35,7 +36,7 @@ namespace UltraView
                 networkStream.Write(messageBytes, 0, messageBytes.Length);
             }
         }
-        
+        //Lấy ID của Người bị điều khiển để tiến hành kết nối vào kèm theo 1 port random
         private void button1_Click(object sender, EventArgs e)
         {
             

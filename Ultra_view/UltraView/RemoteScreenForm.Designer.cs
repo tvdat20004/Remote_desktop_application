@@ -115,7 +115,6 @@
             this.KeyPreview = true;
             this.Name = "RemoteScreenForm";
             this.Text = "RemoteScreen";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RemoteScreenForm_FormClosed);
             this.SizeChanged += new System.EventHandler(this.RemoteScreenForm_SizeChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RemoteScreenForm_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.RemoteScreenForm_KeyUp);

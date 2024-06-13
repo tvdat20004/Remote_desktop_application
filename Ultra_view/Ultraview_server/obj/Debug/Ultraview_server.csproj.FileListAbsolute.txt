@@ -1,0 +1,10 @@
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\bin\Debug\Ultraview_server.exe.config
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\bin\Debug\Ultraview_server.exe
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\bin\Debug\Ultraview_server.pdb
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\obj\Debug\Ultraview_server.csproj.AssemblyReference.cache
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\obj\Debug\Ultraview_server.Form1.resources
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\obj\Debug\Ultraview_server.Properties.Resources.resources
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\obj\Debug\Ultraview_server.csproj.GenerateResource.cache
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\obj\Debug\Ultraview_server.csproj.CoreCompileInputs.cache
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\obj\Debug\Ultraview_server.exe
+E:\tvdat20004\net_programing\project_mang\Ultraview_server\obj\Debug\Ultraview_server.pdb

@@ -34,15 +34,7 @@ namespace UltraView
         public RemoteScreenForm(int Port)
         {
             port = Port;   
-            /*client = new TcpClient();
-            client.Connect(IPAddress.Parse("192.168.102.45"), 8080);
-            ns = client.GetStream();
-            //Thread serverThread = new Thread(new ThreadStart(startThread));
-            //serverThread.Start();
-            
            
-            Thread thread = new Thread(() => getMessage());
-            thread.Start();*/
             
             client = new TcpClient();
             Listening = new Thread(StartListening);
@@ -50,13 +42,11 @@ namespace UltraView
            
             InitializeComponent();
             this.ActiveControl = picShowScreen;
-            /*//listenToClient();
-                   // break;
-             *//*   }
-            }*/
+           
         }
         Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         Socket clientSocket;
+        
         public void StartListening()
         {
             try
@@ -71,10 +61,10 @@ namespace UltraView
             }
             catch
             {
-                //MessageBox.Show("Listening failed!");
                 StopListening();
             }
         }
+        // Nhận hình ảnh từ client khác gửi về
         private void ReceiveImage()
         {
             BinaryFormatter binFormatter = new BinaryFormatter();
@@ -132,23 +122,12 @@ namespace UltraView
             }
             catch { }
         }
-
-       
-        void BroadcastImage(Image img)
-        {
-            picShowScreen.Image = img;
-        }
-
-
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
             StopListening();
         }
-        private void RemoteScreenForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            MainForm.RemoteScreenFormCount--; // giảm biến đếm số lượng form remote
-        }
+       
         #endregion
 
 
@@ -166,6 +145,7 @@ namespace UltraView
                 
             }
         }
+        // Di chuyển chuột trên màn hình
         private void picShowScreen_MouseMove(object sender, MouseEventArgs e)
         {    
             int posX = this.PointToClient(Cursor.Position).X;
@@ -173,7 +153,7 @@ namespace UltraView
             lbMouseMove.Text = "\tPoint: " + posX + ":" + posY;
             sendText("MM:" + posX + ":" + posY + ":" + picShowScreen.Width + ":" + picShowScreen.Height);
         }
-
+        // Nhấn Click Chuột
         private void picShowScreen_MouseClick(object sender, MouseEventArgs e)
         {
             int posX = this.PointToClient(Cursor.Position).X;
@@ -190,6 +170,7 @@ namespace UltraView
             }
 
         }
+        // Double Click chuột
         private void picShowScreen_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             int posX = this.PointToClient(Cursor.Position).X;
@@ -201,7 +182,7 @@ namespace UltraView
             } 
         }
 
-        //Giu chuot
+        // giữ chuột
         private void picShowScreen_MouseDown(object sender, MouseEventArgs e)
         {
             int posX = this.PointToClient(Cursor.Position).X;
@@ -227,7 +208,6 @@ namespace UltraView
         #endregion
 
         #region SendKey
-      
         private void RemoteScreenForm_KeyDown(object sender, KeyEventArgs e)
         {
             try

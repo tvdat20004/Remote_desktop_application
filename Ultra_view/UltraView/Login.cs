@@ -34,6 +34,7 @@ namespace UltraView
             public string type { get; set; }
             public string data { get; set; }
         }
+        // Hash mật khẩu
         public string HashPassword(string password)
         {
             using (SHA512 sha512Hash = SHA512.Create())
@@ -48,6 +49,7 @@ namespace UltraView
                 return sBuilder.ToString();
             }
         }
+        //Tiến hành đăng kí
         private void Register_Click(object sender, EventArgs e)
         {
             if(Password.Text != PasswordAgain.Text)
@@ -83,7 +85,7 @@ namespace UltraView
             
 
         }
-
+        //Tiến hành đăng nhập 
         private async void LoginButton_Click(object sender, EventArgs e)
         {
             client = new TcpClient();
@@ -109,9 +111,8 @@ namespace UltraView
                 ConnectServer(ns, 2);
                 
             }
-            //ConnectServer();
-
         }
+        //Sau khi nhận được phản hồi từ server1 thì tiến hành kết nối server2
         private async void ConnectServer(NetworkStream ns, int type)
         {
             

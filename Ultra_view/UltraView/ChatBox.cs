@@ -26,8 +26,7 @@ namespace UltraView
         TcpListener server;
         private readonly Thread Listening;
         private readonly Thread GetText;
-        private int port; //đem cái port gửi hình +1 để ra cái port khác sài cho gọn đường
-
+        private int port; 
         public ChatBox(int Port)
         {
             
@@ -91,6 +90,7 @@ namespace UltraView
         private NetworkStream istream;
       
         private NetworkStream stream;
+        //Thông tin mã hóa
         #region cryptography
         BigInteger g = BigInteger.Parse("2");
         BigInteger p = BigInteger.Parse("2410312426921032588552076022197566074856950548502459942654116941958108831682612228890093858261341614673227141477904012196503648957050582631942730706805009223062734745341073406696246014589361659774041027169249453200378729434170325843778659198143763193776859869524088940195577346119843545301547043747207749969763750084308926339295559968882457872412993810129130294592999947926365264059284647209730384947211681434464714438488520940127459844288859336526896320919633919");
@@ -300,6 +300,7 @@ namespace UltraView
             }
         }
         NetworkStream _Streamrecv;
+        //Nhận file hoặc Test từ Client bị điều khiển
         private void ReceiveData()
         {
             _Streamrecv = tcpClient.GetStream();
@@ -349,7 +350,7 @@ namespace UltraView
                 this.Close();
             }
         }
-
+        //Gửi file hoặc text cho client bị điều khiển
         private void ReceiveFile(int cnt)
         {
             // Read the file extension length
