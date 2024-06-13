@@ -35,9 +35,9 @@
             // launchingButton
             // 
             this.launchingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.launchingButton.Location = new System.Drawing.Point(47, 224);
+            this.launchingButton.Location = new System.Drawing.Point(35, 217);
             this.launchingButton.Name = "launchingButton";
-            this.launchingButton.Size = new System.Drawing.Size(193, 55);
+            this.launchingButton.Size = new System.Drawing.Size(229, 55);
             this.launchingButton.TabIndex = 1;
             this.launchingButton.Text = "Launch server";
             this.launchingButton.UseVisualStyleBackColor = true;

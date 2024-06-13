@@ -22,24 +22,19 @@ namespace Server_database
         {
             InitializeComponent();
         }
-
+        // Get the IP address of the Wi-Fi adapter
         public string GetIP()
         {
-            // Get all network interfaces
             var networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
 
             foreach (var networkInterface in networkInterfaces)
             {
-                // Check if the network interface is the Wi-Fi adapter
                 if (networkInterface.Name == "Wi-Fi" && networkInterface.OperationalStatus == OperationalStatus.Up)
                 {
                     var properties = networkInterface.GetIPProperties();
-
-                    // Get the first IPv4 address that is not a loopback address
                     var address = properties.UnicastAddresses
                         .FirstOrDefault(a => a.Address.AddressFamily == AddressFamily.InterNetwork &&
                                              !IPAddress.IsLoopback(a.Address));
-
                     if (address != null)
                     {
                         return address.Address.ToString();
@@ -48,16 +43,14 @@ namespace Server_database
             }
             return string.Empty;
         }
-        Socket svDBSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
+        // Start load balancing server while loading form
         private void loadForm(object sender, EventArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;
             Thread clientThread = new Thread(new ThreadStart(StartClientThread));
             clientThread.Start();
         }
-        // lang nghe tu client
         async void StartClientThread()
         {
             string myIP = GetIP();
@@ -72,6 +65,7 @@ namespace Server_database
                 listenMsg.Start();
             }
         }
+        // Handle request from client
         private void listenMsgFromClient(Socket clientSocket)
         {
             try
@@ -79,6 +73,7 @@ namespace Server_database
                 NetworkStream mainStream = new NetworkStream(clientSocket);
                 byte[] buffer = new byte[1024];
                 int rec = mainStream.Read(buffer, 0, buffer.Length);
+                // Load balancing
                 roundRobinLoadBalancing(buffer, clientSocket);
             }
             catch
@@ -86,9 +81,9 @@ namespace Server_database
             }
         }
         int index = 0;
+        // Round robin load balancing
         private void roundRobinLoadBalancing(byte[] request, Socket clientSocket)
         {
-            // round robin load balancing
             int n = dbServers.Count;
             TcpClient db = dbServers[index % n];
             NetworkStream stream = db.GetStream();
@@ -97,6 +92,7 @@ namespace Server_database
             Thread recvMessFromDBServer = new Thread(() => recv(db, clientSocket));
             recvMessFromDBServer.Start();
         }
+        // Receive response from database server
         private void recv(TcpClient db, Socket clientSocket)
         {
             NetworkStream stream = db.GetStream();
@@ -111,6 +107,7 @@ namespace Server_database
                 }
             }
         }
+        // Send response to client
         private void sendRespone(Socket client, byte[] buffer)
         {
             client.Send(buffer);
@@ -118,6 +115,7 @@ namespace Server_database
 
         int countDBServer = 0;
         List<TcpClient> dbServers = new List<TcpClient>();
+        // Connect to database server
         void connectToDBServer(int port)
         {
             TcpClient db = new TcpClient();
@@ -137,7 +135,6 @@ namespace Server_database
             Task.Run(() => form1.ShowDialog());
             richTextBox1.Text += $"Server {countDBServer} is launching\n";
             Thread.Sleep(2000);
-            //connectToDBServer(port);
             Thread connect = new Thread(() => connectToDBServer(port));
             connect.Start();
         }

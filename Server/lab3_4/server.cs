@@ -100,10 +100,12 @@ namespace lab3_4
             }
             
         }
+        // Send message to client
         private void sendMessage2Client(Socket client, string msg)
         {
             client.Send(Encoding.UTF8.GetBytes(msg));
         }
+        // Listen for message from client
         private string listenMsgFromClient(Socket clientSocket)
         {
             try
@@ -119,12 +121,7 @@ namespace lab3_4
                 return null;
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CheckForIllegalCrossThreadCalls = false;
-            Thread serverThread = new Thread(new ThreadStart(StartUnsafeThread));
-            serverThread.Start();
-        }
+        // Save log file when closing the form
         private void closeForm(object sender, FormClosingEventArgs e)
         {
             string filename = DateTime.Now.ToString("HH_mm_ss");
@@ -133,6 +130,13 @@ namespace lab3_4
             string fullFilePath = Path.Combine(saveFolderPath, fileName);
             Directory.CreateDirectory(saveFolderPath); 
             File.WriteAllText(fullFilePath, richTextBox1.Text);
+        }
+
+        private void listenButton_click(object sender, EventArgs e)
+        {
+            CheckForIllegalCrossThreadCalls = false;
+            Thread serverThread = new Thread(new ThreadStart(StartUnsafeThread));
+            serverThread.Start();
         }
     }
 }

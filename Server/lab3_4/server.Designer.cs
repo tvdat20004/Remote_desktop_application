@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(server));
-            this.button1 = new System.Windows.Forms.Button();
+            this.listenButton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // listenButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(70, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Listen";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.listenButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.listenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listenButton.Location = new System.Drawing.Point(70, 66);
+            this.listenButton.Name = "listenButton";
+            this.listenButton.Size = new System.Drawing.Size(148, 48);
+            this.listenButton.TabIndex = 0;
+            this.listenButton.Text = "Listen";
+            this.listenButton.UseVisualStyleBackColor = false;
+            this.listenButton.Click += new System.EventHandler(this.listenButton_click);
             // 
             // richTextBox1
             // 
@@ -61,7 +61,7 @@
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1217, 666);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listenButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "server";
             this.Text = "server";
@@ -72,7 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button listenButton;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

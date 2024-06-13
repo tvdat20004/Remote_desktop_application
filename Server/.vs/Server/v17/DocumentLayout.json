@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\tvdat20004\\net_programing\\Remote_desktop_application\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D628B0D-B7F1-4F09-9E15-3B423B6E4E58}|lab3_4\\Server.csproj|e:\\tvdat20004\\net_programing\\remote_desktop_application\\server\\lab3_4\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D628B0D-B7F1-4F09-9E15-3B423B6E4E58}|lab3_4\\Server.csproj|solutionrelative:lab3_4\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D628B0D-B7F1-4F09-9E15-3B423B6E4E58}|lab3_4\\Server.csproj|E:\\tvdat20004\\net_programing\\Remote_desktop_application\\Server\\lab3_4\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D628B0D-B7F1-4F09-9E15-3B423B6E4E58}|lab3_4\\Server.csproj|solutionrelative:lab3_4\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "server.cs",
+              "DocumentMoniker": "E:\\tvdat20004\\net_programing\\Remote_desktop_application\\Server\\lab3_4\\server.cs",
+              "RelativeDocumentMoniker": "lab3_4\\server.cs",
+              "ToolTip": "E:\\tvdat20004\\net_programing\\Remote_desktop_application\\Server\\lab3_4\\server.cs",
+              "RelativeToolTip": "lab3_4\\server.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAiwFsAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:18:22.305Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "server.cs [Design]",
+              "DocumentMoniker": "E:\\tvdat20004\\net_programing\\Remote_desktop_application\\Server\\lab3_4\\server.cs",
+              "RelativeDocumentMoniker": "lab3_4\\server.cs",
+              "ToolTip": "E:\\tvdat20004\\net_programing\\Remote_desktop_application\\Server\\lab3_4\\server.cs [Design]",
+              "RelativeToolTip": "lab3_4\\server.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T05:23:43.403Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

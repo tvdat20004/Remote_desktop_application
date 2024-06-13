@@ -39,12 +39,13 @@ namespace Server_database
             public string Email { get; set; }
             public string Password { get; set; }
         }
+        
         class request
         {
             public string type { get; set; }
             public string data { get; set; }
         }
-
+        // Connect to MongoDB
         private void connectDB()
         {
 
@@ -62,6 +63,7 @@ namespace Server_database
             var indexDefinition = new IndexKeysDefinitionBuilder<User>().Ascending(field);
             userCollection.Indexes.CreateOne(indexDefinition, options);
         }
+        // Get the IP address of the Wi-Fi adapter
         public string GetIP()
         {
             // Get all network interfaces
@@ -87,8 +89,9 @@ namespace Server_database
             }
             return string.Empty;
         }
-        Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
+        Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        
         async void StartUnsafeThread()
         {
             try
@@ -104,7 +107,7 @@ namespace Server_database
                 MessageBox.Show("Server is already running!!!");
                 return;
             }
-
+            // Start listening for incoming connections
             while (true)
             {
                 Socket clientSocket = await listenerSocket.AcceptAsync();
@@ -113,10 +116,12 @@ namespace Server_database
                 listenMsg.Start();
             }
         }
+        // send response to client
         private void sendRespone(Socket client, string msg)
         {
             client.Send(Encoding.UTF8.GetBytes(msg));
         }
+        // Listen to messages from client
         private string listenMsgFromClient(Socket clientSocket)
         {
             try
@@ -132,11 +137,13 @@ namespace Server_database
                 return null;
             }   
         }
+        // Handle sign in/ sign up request from client
         private void handleRequest(Socket clientSocket)
         {
 
             string message = listenMsgFromClient(clientSocket);
             var json = Newtonsoft.Json.JsonConvert.DeserializeObject<request>(message);
+            // Sign up request
             if (json.type == "Register")
             {
                 try
@@ -163,6 +170,7 @@ namespace Server_database
                     richTextBox1.Text += $"{clientSocket.RemoteEndPoint} register fail :(\n";
                 }
             }
+            // sign in request
             else if (json.type == "Login")
             {
                 var user = Newtonsoft.Json.JsonConvert.DeserializeObject<User>(json.data);
@@ -194,11 +202,7 @@ namespace Server_database
             }
         }
 
-        private void listeningButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        // Save log file while closing server
         private void closeServer(object sender, FormClosingEventArgs e)
         {
             string filename = DateTime.Now.ToString("HH_mm_ss");
@@ -208,7 +212,7 @@ namespace Server_database
             Directory.CreateDirectory(saveFolderPath);
             File.WriteAllText(fullFilePath, richTextBox1.Text);
         }
-
+        // Start server while loading form
         private void loadForm(object sender, EventArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;

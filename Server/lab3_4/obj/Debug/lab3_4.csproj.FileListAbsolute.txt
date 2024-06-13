@@ -1,0 +1,12 @@
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\bin\Debug\lab3_4.exe.config
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\bin\Debug\lab3_4.exe
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\bin\Debug\lab3_4.pdb
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.csproj.AssemblyReference.cache
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.client.resources
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.Form1.resources
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.Properties.Resources.resources
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.server.resources
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.csproj.GenerateResource.cache
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.csproj.CoreCompileInputs.cache
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.exe
+E:\tvdat20004\net_programing\lab3\lab3_4\lab3_4\obj\Debug\lab3_4.pdb

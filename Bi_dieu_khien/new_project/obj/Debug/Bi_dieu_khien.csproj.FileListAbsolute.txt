@@ -1,0 +1,7 @@
+E:\tvdat20004\net_programing\Remote_desktop_application\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.AssemblyReference.cache
+E:\tvdat20004\net_programing\Remote_desktop_application\Bi_dieu_khien\new_project\obj\Debug\new_project.ChatForm.resources
+E:\tvdat20004\net_programing\Remote_desktop_application\Bi_dieu_khien\new_project\obj\Debug\new_project.Form1.resources
+E:\tvdat20004\net_programing\Remote_desktop_application\Bi_dieu_khien\new_project\obj\Debug\new_project.Formdkidnhap.resources
+E:\tvdat20004\net_programing\Remote_desktop_application\Bi_dieu_khien\new_project\obj\Debug\new_project.Properties.Resources.resources
+E:\tvdat20004\net_programing\Remote_desktop_application\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.GenerateResource.cache
+E:\tvdat20004\net_programing\Remote_desktop_application\Bi_dieu_khien\new_project\obj\Debug\Bi_dieu_khien.csproj.CoreCompileInputs.cache
