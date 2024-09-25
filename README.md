@@ -1,5 +1,4 @@
 # Remote_desktop_application
-Our final project in Network Programming at UIT
 Nhóm 8: 
 - Thái Vĩnh Đạt - 22520235
 - Nguyễn Nhật Anh - 22520059
